@@ -20,7 +20,7 @@ We need to have a `gh-pages` branch on GitHub. GitHub will automatically make wh
 In order to create that branch for the first time:
 
 * Create and checkout a new branch by running `git checkout -b gh-pages`.
-* Push that branch to GitHub by running 'git push -u origin gh-pages`.
+* Push that branch to GitHub by running `git push -u origin gh-pages`.
 * Remember to checkout your `master` branch again before making additional changes, with `git checkout master`.
 
 Every subsequent time you want to publish new changes (after committing them!), these steps become:
