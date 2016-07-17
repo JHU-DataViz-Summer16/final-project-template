@@ -13,6 +13,22 @@ When setting up the project for the first time, you'll need to:
 * The defaults are fine for the other fields.
 * We now run the commands in the "...or push an existing repository from the command line" example shown on the resulting page.
 
+## Publishing to Github Pages
+
+We need to have a `gh-pages` branch on GitHub. GitHub will automatically make whatever commits are on that branch accessible at [yourusername].github.io/[yourreponame].
+
+In order to create that branch for the first time:
+
+* Create and checkout a new branch by running `git checkout -b gh-pages`.
+* Push that branch to GitHub by running 'git push -u origin gh-pages`.
+* Remember to checkout your `master` branch again before making additional changes, with `git checkout master`.
+
+Every subsequent time you want to publish new changes (after committing them!), these steps become:
+
+* `git checkout gh-pages`
+* `git push`
+* `git checkout master`
+
 ## Running a local server
 
 If you haven't yet installed [reload](https://www.npmjs.com/package/reload) globally, run `npm install -g reload'.
